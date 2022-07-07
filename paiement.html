@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#modelId">
+  Réserver
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Paiement</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col"><span class="d-flex">Nom</span><input class="mb-3" type="text" id="nom" placeholder="Nom et prénom" required></div>
+            <div class="col"><span class="d-flex">Numéro carte</span><input class="mb-3 " type="text" id="card" placeholder="xxxx-xxxx-xxxx-xxxx" required></div>
+            <div class="col"><span class="d-flex">Date</span><input class="mb-3 w-50" type="" id="nom" placeholder="MM/YY"required></div>
+              <div class="col"><span class="d-flex">Cryptogramme</span><input class="mb-3 w-25" type="text" id="crypto" placeholder="xxx"required></div>
+          </div>
+        </div>
+         
+        
+         
+        
+        
+        
+        </form> 
+        
+      </div>
+      <div class="modal-footer">
+        <input class="mb-3 btn btn-success " type="button" id="bouton" value="Payer">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+     
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  </body>
+</html>
