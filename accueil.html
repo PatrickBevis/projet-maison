@@ -11,30 +11,36 @@
 </head>
 <body>
 
-    <header class="d-flex align-items-center">
+    <header class="d-flex align-items-center mb-5 border-bottom pb-2">
         <div><img src="img/logo-maison_bg-remove-removebg-p.png"></div>
         <h1>LouezUneMaison</h1>
     </header>
 
     <section>
         
-        <div class="row d-flex justify-content-evenly mt-3">
+        <div class="row d-flex justify-content-evenly align-items-center  container-fluid">
             <!-- CARDS -->
-            <div class="card mt-3" style="width: 18rem;">
-                <img src="img/Maison1.jpg" class="card-img-top h-75" alt="maison-1">
+            <div class="card mt-3 w-25 p-0" >
+                <img src="img/Maison4.jpg" class="card-img-top " alt="maison-1">
                 <div class="card-body">
                     <h5 class="card-title text-muted">Lyon, France</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <div class="d-flex align-items-center justify-content-between text-success">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
+                    <h3>125€/J</h3>
+                </div>
                 </div>
             </div>
 
-            <div class="card mt-3" style="width: 18rem;">
-                <img src="img/Maison2.jpg" class="card-img-top h-75" alt="maison-2">
+            <div class="card mt-3 w-25 p-0" >
+                <img src="img/Maison5.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
                     <h5 class="card-title text-muted">St-Tropez, France</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="d-flex align-items-center justify-content-between text-success">
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
+                    <h3>170€/J</h3>
+                    </div>
                 </div>
             </div>
 
@@ -128,8 +134,23 @@
 
     </section>
 
-    <footer class="d-flex justify-content-center align-item-center mt-3">
-        <p>Footer</p>
+    <footer class="position-absolute text-center bottom-0 m-auto container-fluid border-top pt-2">
+        <h4>LouezUneMaison.com</h4>
+    <div class="d-flex flex-row justify-content-center list-style-none m-3">
+        <div class="d-flex flex-column w-25">
+            <ul class="list-group">
+                <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison 1</a> </li>
+                <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison 2 </a></li>
+            </ul>
+        
+        </div>
+        <div class="d-flex flex-column w-25 ">
+            <ul class="list-group ">
+                <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Partenaires</a></li>
+                <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Contact </a></li>
+            </ul>
+        </div>
+    </div>
     </footer>
 
     <!-- Bootstrap JavaScript Libraries -->
