@@ -57,7 +57,17 @@ telNum.addEventListener("input", function (evt) {
     }
 });
 
-// -------------------------------------------------------------------------------------
+// --------------------------------- FONCTION DATE VALIDE ------------------------------------------------
+
+let entreeInput = document.querySelector('#dateEntree');
+
+entreeInput.addEventListener('input', function(evt) {
+    evt.preventDefault();
+    const dateValue = evt.target.value;
+    console.log(dateValue);
+});
+
+// --------------------------------- EASEPICK EXEMPLE ----------------------------------------------------
 
 const DateTime = easepick.DateTime;
 const today = new DateTime();
@@ -66,7 +76,7 @@ const tomorrow = today.clone().add(1, 'day');
 const dateEl = document.getElementById('dateTest');
 dateEl.innerHTML = `Today is: ${today.format('DD MMM YYYY')}<br/>Tomorrow is: ${tomorrow.format('DD MMM YYYY')}`;
 
-// --------------------------------------------------------------------------------------
+// ------------------------------------ BOUTON PASSER AU PAIMENT -----------------------------------------
 
 const resaButton = document.querySelector("#buttonVerif");
 
