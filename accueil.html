@@ -1,165 +1,225 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Accueil</title>
 </head>
+
 <body>
 
     <header class="d-flex align-items-center mb-5 border-bottom pb-2">
         <div><img src="img/logo-maison_bg-remove-removebg-p.png"></div>
         <h1>LouezUneMaison</h1>
     </header>
-    
+
     <div class="container container-lg">
-        <div class="row d-flex justify-content-evenly align-items-center">
+        <div class="row">
             <!-- CARDS -->
-            <div class=" col card m-3 w-25 p-0" >
+            <div class=" col card m-3 w-25 p-0">
                 <img src="img/Maison4.jpg" class="card-img-top " alt="maison-1">
                 <div class="card-body">
                     <h5 class="card-title text-muted">Lyon, France</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                     <div class="d-flex align-items-center justify-content-between">
-                        <h3 class = "ms-4">125€/J</h3>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
-                        
+                        <h3 class="ms-2">125€/J</h3>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#button_reservation">Reservation</button>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col card mt-3 w-25 p-0" >
+            <div class="col card m-3 w-25 p-0">
                 <img src="img/Maison5.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
                     <h5 class="card-title text-muted">St-Tropez, France</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
                     <div class="d-flex align-items-center justify-content-between">
-                        <h3 class="ms-4" >170€/J</h3>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
-                        
-                    </div>
-                </div>
-            </div>
-    
-            <!-- Modal RESERVATION -->
-            
-            <!-- Modal -->
-            <div class="modal fade" id="button_reservation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
+                        <h3 class="ms-2">170€/J</h3>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#button_reservation">Reservation</button>
 
-                    <div class="modal-content">
-
-                        <div class="modal-header">
-                            <h5 class="modal-title text-primary" id="staticBackdropLabel">Reservation</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body text-center ">
-
-                            <div class="d-flex flex-column  align-items-center justify-content-center text-primary">
-                                <div>
-                                    <i class="fa-solid fa-user fa-2xl mb-1 me-1"></i>
-                                    <input type="text" class="container-fluid w-75 m-2 text-center mt-0 nameInput" placeholder="Votre nom">
-                                </div>
-
-                                <div class="d-flex align-items-center justify-content-center text-primary">
-                                    <i class="fa-solid fa-square-envelope fa-2xl mb-1 me-2"></i>
-                                    <input type="e-mail" class="container-fluid w-75 m-2 text-center mt-0 eMailInput" placeholder="Votre E-mail">
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-center text-primary">
-                                    <i class="fa-solid fa-square-phone fa-2xl mb-1 me-2"></i>
-                                    <input type="text" class="container-fluid w-75 m-2 text-center mt-0 telNum" placeholder="Votre numéro de téléphone">
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-center text-primary entree">
-                                    <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2"></i>
-                                    <input id="dateEntree" type="date" class="container-fluid w-75 m-2 text-center mt-0">
-                                </div>
-
-                                <div class="d-flex justify-content-center align-items-center text-primary sortie">
-                                    <i class="fa-solid fa-arrow-right-from-bracket fa-2xl mb-1 me-2 "></i>
-                                    <input id="dateSortie" type="date" class="container-fluid w-75 m-2 text-center mt-0">
-                                </div>
-
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#modelId" id="buttonVerif">Passer au paiement</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-            <!-- Modal PAIEMENT -->
-                                
-            <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Paiement</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-
-                        <div class="modal-body">
-                            <form>
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col"><span class="d-flex">Nom</span><input class="mb-3" type="text" id="nom" placeholder="NOM Prénom" required></div>
-                                        <div class="col"><span class="d-flex">Numéro carte</span><input class="mb-3 " type="text" id="card" placeholder="xxxxxxxxxxxxxxxx" required></div>
-                                        <div class="col"><span class="d-flex">Date</span><input class="mb-3 w-50" type="" id="date" placeholder="MM/YY"required></div>
-                                        <div class="col"><span class="d-flex">Cryptogramme</span><input class="mb-3 w-25" type="text" id="crypto" placeholder="xxx"required></div>
-                                    </div>
-                                </div>
-                            </form> 
-                        </div>
-
-                        <div class="modal-footer">
-                            <input class="mb-3 btn btn-success " type="button" id="bouton" value="Payer">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Modal RESERVATION -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="button_reservation" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title text-primary" id="staticBackdropLabel">Reservation</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body text-center ">
+
+                    <div class="d-flex flex-column  align-items-center justify-content-center text-primary">
+                        <div>
+                            <i class="fa-solid fa-user fa-2xl mb-1 me-1"></i>
+                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 nameInput"
+                                placeholder="Votre nom">
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-center text-primary">
+                            <i class="fa-solid fa-square-envelope fa-2xl mb-1 me-2"></i>
+                            <input type="e-mail" class="container-fluid w-75 m-2 text-center mt-0 eMailInput"
+                                placeholder="Votre E-mail">
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center text-primary">
+                            <i class="fa-solid fa-square-phone fa-2xl mb-1 me-2"></i>
+                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 telNum"
+                                placeholder="Votre numéro de téléphone">
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center text-primary entree">
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2"></i>
+                            <input id="dateEntree" type="date" class="container-fluid w-75 m-2 text-center mt-0">
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center text-primary sortie">
+                            <i class="fa-solid fa-arrow-right-from-bracket fa-2xl mb-1 me-2 "></i>
+                            <input id="dateSortie" type="date" class="container-fluid w-75 m-2 text-center mt-0">
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#modelId"
+                            id="buttonVerif">Passer au paiement</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal PAIEMENT -->
+
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Paiement</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col"><span class="d-flex">Nom</span><input class="mb-3" type="text" id="nom"
+                                        placeholder="NOM Prénom" required></div>
+                                <div class="col"><span class="d-flex">Numéro carte</span><input class="mb-3 "
+                                        type="text" id="card" placeholder="xxxxxxxxxxxxxxxx" required></div>
+                                <div class="col"><span class="d-flex">Date</span><input class="mb-3 w-50" type=""
+                                        id="date" placeholder="MM/YY" required></div>
+                                <div class="col"><span class="d-flex">Cryptogramme</span><input class="mb-3 w-25"
+                                        type="text" id="crypto" placeholder="xxx" required></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer">
+                    <input class="mb-3 btn btn-success " type="button" id="bouton" value="Payer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="">
+        <div class="container-fluid container-lg border border-success bg-white">
+          <div class="row ">
+            <div class="col d-flex justify-content-center">
+              <i class="fa-brands fa-facebook   p-3 m-10"></i>
+              <i class="fa-brands fa-instagram  p-3 m-10"></i>
+              <i class="fa-brands fa-pinterest  p-3 m-10"></i>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="col-lg-4 d-flex flex-column align-items-center ">
+              <h3 class="m-2 mt-5">A propos</h3>
+              <p class="">Contact</p>
+              <p class="">Réservation</p>
+              <p class="">Mentions légales</p>
+              <p class="">CGU</p>
+            </div>
+            <div class="col-lg-4 d-flex flex-column align-items-center ">
+              <h3 class="m-2 mt-5">Contact</h3>
+              <p class="">123 rue du pain, 59400 Cambrai</p>
+              <p class="">01 77 88 99 11</p>
+              <p class="">contact@Louezunemaison.fr</p>
+            </div>
+
+            <div class="col-lg-4 d-flex flex-column align-items-center ">
+              <a href="https://github.com/JustineDev00/Restaurant-BS-TBDA"><img src="./img/logo-maison_bg-remove-removebg-p.png"
+                  alt="" class="d-none d-lg-block d-flex justify-content-center w-100"></a>
     
-    <footer class="text-center bottom-0 m-auto container-fluid border-top pt-2">
+            </div>
+            
+    
+              </div>
+            </div>
+          </div>
+          <div class="row d-flex ">
+            <div class="col "></div>
+            <p class="d-flex justify-content-center p-3">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p>
+          </div>
+        </div>
+      </footer>
+    <!-- <footer class="text-center bottom-0 m-auto container-fluid border-top pt-2">
         <h4>LouezUneMaison.com</h4>
         <div class="d-flex flex-row justify-content-center list-style-none m-3">
             <div class="d-flex flex-column w-25">
                 <ul class="list-group">
-                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison 1</a> </li>
-                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison 2 </a></li>
+                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison
+                            1</a> </li>
+                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Maison
+                            2 </a></li>
                 </ul>
             </div>
             <div class="d-flex flex-column w-25 ">
                 <ul class="list-group ">
-                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Partenaires</a></li>
-                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Contact </a></li>
+                    <li class="list-group-item border-0"> <a href=""
+                            class="text-decoration-none text-secondary">Partenaires</a></li>
+                    <li class="list-group-item border-0"> <a href="" class="text-decoration-none text-secondary">Contact
+                        </a></li>
                 </ul>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-        crossorigin="anonymous">
-    </script>
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+        </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@easepick/datetime@1.2.0/dist/index.umd.min.js"></script>
     <script src="./js/paiement.js"></script>
     <script src="./js/reservation.js"></script>
 </body>
+
 </html>
