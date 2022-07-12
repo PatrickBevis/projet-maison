@@ -57,6 +57,15 @@ telNum.addEventListener("input", function (evt) {
     }
 });
 
+// -------------------------------------------------------------------------------------
+
+const DateTime = easepick.DateTime;
+const today = new DateTime();
+const tomorrow = today.clone().add(1, 'day');
+
+const dateEl = document.getElementById('dateTest');
+dateEl.innerHTML = `Today is: ${today.format('DD MMM YYYY')}<br/>Tomorrow is: ${tomorrow.format('DD MMM YYYY')}`;
+
 // --------------------------------------------------------------------------------------
 
 const resaButton = document.querySelector("#buttonVerif");
