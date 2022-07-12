@@ -94,14 +94,14 @@
                             <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2 text-primary"></i>
                             
                             <select name="checkbox" id="date-select" class="form-control text-muted mt-0 mb-2 ms-1 me-1">
-                                <option id="w1">01/07/2022 - 03/07/2022</option>
+                                <option disabled id="w1">01/07/2022 - 03/07/2022</option>
                                 <option id="w2">03/07/2022 - 06/07/2022</option>
-                                <option id="w3">06/07/2022 - 09/07/2022</option>
+                                <option disabled id="w3">06/07/2022 - 09/07/2022</option>
                                 <option id="w4">09/07/2022 - 12/07/2022</option>
                                 <option id="w5">12/07/2022 - 15/07/2022</option>
                                 <option id="w6">15/07/2022 - 18/07/2022</option>
                                 <option id="w7">18/07/2022 - 21/07/2022</option>
-                                <option id="w8">21/07/2022 - 24/07/2022</option>
+                                <option disabled id="w8">21/07/2022 - 24/07/2022</option>
                                 <option id="w9">24/07/2022 - 27/07/2022</option>
                                 <option id="w10">27/07/2022 - 30/07/2022</option>
                             </select>
@@ -112,9 +112,14 @@
 
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
-                        <button id="verif" type="button">Vérifier</button>
+                        <!-- <button id="verif" type="button">Vérifier</button> -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modelId" id="buttonVerif">Passer au paiement</button>
+                        <button type="button" class="btn btn-primary" id="buttonVerif">Réserver</button>
+                        <div id="confirmPaiement" class="alert alert-success mt-3 w-100 d-none" role="alert">
+                            <h4 class="alert-heading text-center">Réservation acceptée</h4>
+                            <hr>
+                            <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modelId">Passer au paiement</button>
+                          </div>
                     </div>
                 </div>
             </div>
@@ -155,9 +160,7 @@
         </div>
     </div>
 
-
-
-    <footer class="border-top border-success mb-5">
+    <!-- <footer class="border-top border-success mb-5">
         <div class="container-fluid container-lg  bg-white">
 
             <div class="row ">
@@ -192,6 +195,43 @@
         <div class="row d-flex ">
             <div class="col "></div>
             <p class="d-flex justify-content-center">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p></div>
+        </div>
+
+    </footer> -->
+
+    <footer class="container-fluid border-top border-success bottom-0 mt-5">
+        <div>
+            <div class="d-flex justify-content-center mt-3">
+                <i class="fa-brands fa-facebook  fa-xl text-success m-1"></i>
+                <i class="fa-brands fa-instagram fa-xl text-success m-1"></i>
+                <i class="fa-brands fa-pinterest fa-xl text-success m-1"></i>
+            </div>
+        
+            <div class="row">
+                <div class="col-lg d-flex flex-column align-items-center ">
+                    <h5 class="m-2">A propos</h5>
+                    <p class="m-0">Contact</p>
+                    <p class="m-0">Réservation</p>
+                    <p class="m-0">Mentions légales</p>
+                    <p class="m-0">CGU</p>
+                </div>
+                <div class="col-lg d-flex flex-column align-items-center ">
+                    <h5 class="m-2">Contact</h5>
+                    <p class="m-0">123 rue du pain, 59400 Cambrai</p>
+                    <p class="m-0">01 77 88 99 11</p>
+                    <p class="m-0">contact@Louezunemaison.fr</p>
+                </div>
+
+                <!-- <div class="col-lg-4 d-flex flex-column align-items-center ">
+                    <a href="#"><img src="./img/logo-maison_bg-remove-removebg-p.png" alt=""
+                    class="d-none d-lg-block d-flex justify-content-center w-100"></a>
+
+                </div> -->
+            </div>
+        </div>
+
+        <div class="text-center">
+            <p class="d-flex justify-content-center p-3 m-0">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p>
         </div>
 
     </footer>

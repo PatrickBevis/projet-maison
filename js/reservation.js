@@ -58,29 +58,29 @@ telNum.addEventListener("input", function (evt) {
 
 // --------------------------------- FONCTION DATE VALIDE ------------------------------------------------
 
-const dateSelect = document.querySelector('#date-selected');
-let tableauOptions = document.querySelectorAll('option');
+// let dateSelect = document.querySelector('#date-selected');
+// let tableauOptions = document.querySelectorAll('option');
+// console.log(tableauOptions[1]);
+// tableauOptions.addEventListener("change", function(evt, tableauOptions){
+//     evt.preventDefault();
 
-dateSelect.addEventListener("change", function(evt, tableauOptions){
-    evt.preventDefault();
+//     tableauOptions[1] = false;
+//     tableauOptions[4] = false;
+//     tableauOptions[5] = false;
+//     tableauOptions[8] = false;
 
-    tableauOptions[1] = false;
-    tableauOptions[4] = false;
-    tableauOptions[5] = false;
-    tableauOptions[8] = false;
+//     for (let i = 0; i < tableauOptions.length; i++) {
+//         const optionCourante = tableauOptions[i];
 
-    for (let i = 0; i < tableauOptions.length; i++) {
-        const optionCourante = tableauOptions[i];
+//         if(tableauOptions[i] == true) {
+//             optionCourante.style.borderColor = "green";
+//         }
+//         else {
+//             optionCourante.style.borderColor = "red";
+//         }        
+//     }
 
-        if(tableauOptions[i] == true) {
-            optionCourante.style.borderColor = "green";
-        }
-        else {
-            optionCourante.style.borderColor = "red";
-        }        
-    }
-
-});
+// });
 
 // const dateInvalid1 = document.querySelector('#w2');
 // const dateInvalid2 = document.querySelector('#w6');
@@ -111,18 +111,30 @@ dateSelect.addEventListener("change", function(evt, tableauOptions){
 
 // ------------------------------------ BOUTON PASSER AU PAIMENT -----------------------------------------
 
+// const resaButton = document.querySelector("#buttonVerif");
+// const verifButton = document.querySelector("#verif");
+// resaButton.classList.add("disabled");
+
+// function onClick(event) {
+//     event.preventDefault();
+//     if(validNom && validEmail && validNum) {
+//     resaButton.classList.remove("disabled");
+//     }
+// }
+
+// verifButton.addEventListener('click', onClick);
+
 const resaButton = document.querySelector("#buttonVerif");
-const verifButton = document.querySelector("#verif");
-resaButton.classList.add("disabled");
+const confirmPaiement = document.getElementById('confirmPaiement');
 
-function onClick(event) {
-    event.preventDefault();
-    if(validNom && validEmail && validNum) {
-    resaButton.classList.remove("disabled");
+resaButton.addEventListener('click', function(){
+    if(validNom == true && validEmail == true && validNum == true) {
+        confirmPaiement.classList.remove('d-none');
     }
-}
-
-verifButton.addEventListener('click', onClick);
+    else {
+        alert('ALERTE AUX GOGOLES');
+    }
+});
 
 // ------------------------------------------------------------------------------------------
 
