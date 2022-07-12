@@ -15,36 +15,36 @@
         <h1>LouezUneMaison</h1>
     </header>
 
-    <div class="container">
-        
     
-        
-        <div class="row d-flex justify-content-evenly align-items-center">
+<div class="container container-lg">
+          <div class="row d-flex justify-content-evenly align-items-center">
             <!-- CARDS -->
-            <div class="card mt-3 w-25 p-0" >
+            <div class=" col card m-3 w-25 p-0" >
                 <img src="img/Maison4.jpg" class="card-img-top " alt="maison-1">
                 <div class="card-body">
                     <h5 class="card-title text-muted">Lyon, France</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="d-flex align-items-center justify-content-between text-success">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
-                        <!-- <h3>125€/J</h3> -->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h3 class = "ms-4">125€/J</h3>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
+                        
                     </div>
                 </div>
             </div>
 
-            <div class="card mt-3 w-25 p-0" >
+            <div class="col card mt-3 w-25 p-0" >
                 <img src="img/Maison5.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
                     <h5 class="card-title text-muted">St-Tropez, France</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="d-flex align-items-center justify-content-between text-success">
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
-                        <!-- <h3>170€/J</h3> -->
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h3 class="ms-4" >170€/J</h3>
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
+                        
                     </div>
                 </div>
             </div>
-</div>
+    
             <!-- Modal RESERVATION -->
             
             <!-- Modal -->
@@ -96,7 +96,7 @@
                     </div>
                 </div>
             </div>
-
+        
             <!-- Modal PAIEMENT -->
                                 
             <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
@@ -127,7 +127,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
     
 
     <footer class="text-center bottom-0 m-auto container-fluid border-top pt-2">
@@ -159,7 +159,7 @@
         integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
         crossorigin="anonymous">
     </script>
-
+<script src="https://cdn.jsdelivr.net/npm/@easepick/datetime@1.2.0/dist/index.umd.min.js%22%3E"></script>
     <script src="./js/paiement.js"></script>
     <script src="./js/reservation.js"></script>
 </body>
