@@ -40,7 +40,7 @@ eMailInput.addEventListener("input", function (evt) {
 
 // ---------------------------------------------------------------------------------------
 
-let  validNum = false;
+let validNum = false;
 telNum.addEventListener("input", function (evt) {
     evt.preventDefault();
     const telValidRgx = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/;    
@@ -58,13 +58,47 @@ telNum.addEventListener("input", function (evt) {
 
 // --------------------------------- FONCTION DATE VALIDE ------------------------------------------------
 
-let entreeInput = document.querySelector('#dateEntree');
+const dateSelect = document.querySelector('#date-selected');
+let tableauOptions = document.querySelectorAll('option');
 
-entreeInput.addEventListener('input', function(evt) {
+dateSelect.addEventListener("change", function(evt, tableauOptions){
     evt.preventDefault();
-    const dateValue = evt.target.value;
-    console.log(dateValue);
+
+    tableauOptions[1] = false;
+    tableauOptions[4] = false;
+    tableauOptions[5] = false;
+    tableauOptions[8] = false;
+
+    for (let i = 0; i < tableauOptions.length; i++) {
+        const optionCourante = tableauOptions[i];
+
+        if(tableauOptions[i] == true) {
+            optionCourante.style.borderColor = "green";
+        }
+        else {
+            optionCourante.style.borderColor = "red";
+        }        
+    }
+
 });
+
+// const dateInvalid1 = document.querySelector('#w2');
+// const dateInvalid2 = document.querySelector('#w6');
+// const dateInvalid3 = document.querySelector('#w7');
+// const dateInvalid4 = document.querySelector('#w9');
+
+// dateInvalid1.classList.add("disabled");
+// dateInvalid2.classList.add("disabled");
+// dateInvalid3.classList.add("disabled");
+// dateInvalid4.classList.add("disabled");
+
+
+
+// entreeInput.addEventListener('input', function(evt) {
+//     evt.preventDefault();
+//     const dateValue = evt.target.value;
+//     console.log(dateValue);
+// });
 
 // --------------------------------- EASEPICK EXEMPLE ----------------------------------------------------
 
@@ -79,8 +113,8 @@ entreeInput.addEventListener('input', function(evt) {
 
 const resaButton = document.querySelector("#buttonVerif");
 const verifButton = document.querySelector("#verif");
-
 resaButton.classList.add("disabled");
+
 function onClick(event) {
     event.preventDefault();
     if(validNom && validEmail && validNum) {
