@@ -23,49 +23,40 @@
 
     <header class="header-style container-fluid d-flex flex-column justify-content-center align-items-center">
         <div class="container">
-          <div class="row">
-            <div class="col d-flex flex-column justify-content-center align-items-center "><h2 class="text-light">Louez une maison de rêve ! </h2><small class="text-light">(si vous aimez les grandes maisons avec piscine...Fin bref !)</small></div>
-           
-    
-          </div>
+            <div class="row">
+                <div class="col d-flex flex-column justify-content-center align-items-center "><h2 class="text-light">Louez une maison de rêve ! </h2><small class="text-light">(si vous aimez les grandes maisons avec piscine...Fin bref !)</small></div>
+            </div>
         </div>
-      </header>
+    </header>
 
+    <!-- CARDS -->
 
-    <div class="container container-lg ">
-        <div class="row d-flex justify-content-center">
-            <!-- CARDS -->
-            <div class=" col-lg-6 col-12 card m-5 w-25 p-0 shadow-lg">
-                <img src="img/Maison4.jpg" class="card-img-top " alt="maison-1">
+    <div class="container mt-5 mb-5">
+        <div class=" d-flex justify-content-around ">
+
+            <div class="card container me-5 p-0 shadow">
+                <img src="img/maison2.jpg" class="card-img-top " alt="maison-1">
                 <div class="card-body">
-                    <h5 class="card-title text-muted">Lyon, France</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h3 class="ms-2">125€/J</h3>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#button_reservation">Reservation</button>
-
-                    </div>
+                    <h5 class="card-title text-muted text-center">Lyon, France</h5>
+                    <p class="card-text text-center">Villa de luxe pour les pauvres</p>
+                    <h3 class="ms-2 text-center text-success"><strong>1700€/J</strong></h3>
+                    <button type="button" class="btn btn-success container" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
                 </div>
             </div>
-
-            <div class="col-lg-6 col-12 card m-5 w-25 p-0 shadow-lg">
-                <img src="img/Maison5.jpg" class="card-img-top " alt="maison-2">
+        
+            <div class="card container p-0 ms-5  shadow">
+                <img src="img/maison4.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
-                    <h5 class="card-title text-muted">St-Tropez, France</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="d-flex align-items-center justify-content-between">
-                        <h3 class="ms-2">170€/J</h3>
-                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
-                            data-bs-target="#button_reservation">Reservation</button>
-
-                    </div>
+                    <h5 class="card-title text-center">St-Tropez, France</h5>
+                    <p class="card-text text-center">Villa de luxe pour les pauvres</p>
+                    <h3 class="ms-2 text-center text-success"><strong>170€/J</strong></h3>
+                    <button type="button" class="btn btn-success container" data-bs-toggle="modal" data-bs-target="#button_reservation">Reservation</button>
                 </div>
             </div>
+           
         </div>
     </div>
+
     <!-- Modal RESERVATION -->
 
     <!-- Modal -->
@@ -83,32 +74,38 @@
                 <div class="modal-body text-center ">
 
                     <div class="d-flex flex-column  align-items-center justify-content-center text-primary">
+
                         <div>
                             <i class="fa-solid fa-user fa-2xl mb-1 me-1"></i>
-                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 nameInput"
-                                placeholder="Votre nom">
+                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 nameInput" placeholder="Votre nom">
                         </div>
 
                         <div class="d-flex align-items-center justify-content-center text-primary">
                             <i class="fa-solid fa-square-envelope fa-2xl mb-1 me-2"></i>
-                            <input type="e-mail" class="container-fluid w-75 m-2 text-center mt-0 eMailInput"
-                                placeholder="Votre E-mail">
+                            <input type="e-mail" class="container-fluid w-75 m-2 text-center mt-0 eMailInput" placeholder="Votre E-mail">
                         </div>
 
                         <div class="d-flex justify-content-center align-items-center text-primary">
                             <i class="fa-solid fa-square-phone fa-2xl mb-1 me-2"></i>
-                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 telNum"
-                                placeholder="Votre numéro de téléphone">
+                            <input type="text" class="container-fluid w-75 m-2 text-center mt-0 telNum" placeholder="Votre numéro de téléphone">
                         </div>
 
-                        <div class="d-flex justify-content-center align-items-center text-primary entree">
-                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2"></i>
-                            <input id="dateEntree" type="date" class="container-fluid w-100 m-2 text-center mt-0">
-                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2 text-primary"></i>
+                            
+                            <select name="checkbox" id="date-select" class="form-control text-muted mt-0 mb-2 ms-1 me-1">
+                                <option id="w1">01/07/2022 - 03/07/2022</option>
+                                <option id="w2">03/07/2022 - 06/07/2022</option>
+                                <option id="w3">06/07/2022 - 09/07/2022</option>
+                                <option id="w4">09/07/2022 - 12/07/2022</option>
+                                <option id="w5">12/07/2022 - 15/07/2022</option>
+                                <option id="w6">15/07/2022 - 18/07/2022</option>
+                                <option id="w7">18/07/2022 - 21/07/2022</option>
+                                <option id="w8">21/07/2022 - 24/07/2022</option>
+                                <option id="w9">24/07/2022 - 27/07/2022</option>
+                                <option id="w10">27/07/2022 - 30/07/2022</option>
+                            </select>
 
-                        <div class="d-flex justify-content-center align-items-center text-primary sortie">
-                            <i class="fa-solid fa-arrow-right-from-bracket fa-2xl mb-1 me-2 "></i>
-                            <input id="dateSortie" type="date" class="container-fluid w-100 m-2 text-center mt-0">
                         </div>
 
                     </div>
@@ -126,7 +123,7 @@
 
     <!-- Modal PAIEMENT -->
 
-    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" data-bs-backdrop="static" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -162,47 +159,43 @@
 
     <footer class="border-top border-success mb-5">
         <div class="container-fluid container-lg  bg-white">
+
             <div class="row ">
                 <div class="col d-flex justify-content-center">
                     <i class="fa-brands fa-facebook  fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
                     <i class="fa-brands fa-instagram fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
                     <i class="fa-brands fa-pinterest fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
                 </div>
-
             </div>
+
             <div class="row ">
-                <div class="col-lg-4 d-flex flex-column align-items-center ">
+                <div class="col-lg-4 d-flex flex-column align-items-center">
                     <h3 class="m-2 mt-5">A propos</h3>
                     <p class="">Contact</p>
                     <p class="">Réservation</p>
                     <p class="">Mentions légales</p>
                     <p class="">CGU</p>
                 </div>
-                <div class="col-lg-4 d-flex flex-column align-items-center ">
+                <div class="col-lg-4 d-flex flex-column align-items-center">
                     <h3 class="m-2 mt-5">Contact</h3>
                     <p class="">123 rue du pain, 59400 Cambrai</p>
                     <p class="">01 77 88 99 11</p>
                     <p class="">contact@Louezunemaison.fr</p>
                 </div>
-
-                <div class="col-lg-4 d-flex flex-column align-items-center ">
-                    <a href="https://github.com/PatrickBevis/projet-maison"><img
-                            src="./img/logo-maison_2_-removebg-preview.png" alt=""
-                            class="d-none d-lg-block d-flex justify-content-center w-75 ms-5"></a>
-
+                <div class="col-lg-4 d-flex flex-column align-items-center">
+                    <a href="https://github.com/PatrickBevis/projet-maison"><img src="./img/logo-maison_2_-removebg-preview.png" alt="" class="d-none d-lg-block d-flex justify-content-center w-75 ms-5"></a>
                 </div>
-
-
-
             </div>
+
         </div>
-        </div>
+
         <div class="row d-flex ">
             <div class="col "></div>
-            <p class="d-flex justify-content-center">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p>
+            <p class="d-flex justify-content-center">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p></div>
         </div>
-        </div>
+
     </footer>
+
     <!-- <footer class="text-center bottom-0 m-auto container-fluid border-top pt-2">
         <h4>LouezUneMaison.com</h4>
         <div class="d-flex flex-row justify-content-center list-style-none m-3">
