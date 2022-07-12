@@ -44,7 +44,7 @@ eMailInput.addEventListener("input", function (evt) {
 let  validNum = false;
 telNum.addEventListener("input", function (evt) {
     evt.preventDefault();
-    const telValidRgx = /^0[1-7][ ](0-9){2}[ ](0-9){2}[ ](0-9){2}[ ](0-9){2}$/;          
+    const telValidRgx = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/;    
     const telValue = evt.target.value;
     console.log(telValidRgx.test(telValue));
     validEmail = telValidRgx.test(telValue);
