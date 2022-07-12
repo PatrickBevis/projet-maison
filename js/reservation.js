@@ -23,7 +23,6 @@ nameInput.addEventListener("input", function (evt) {
 // -------------------------------------------------------------------------------
 
 let  validEmail = false;
-
 eMailInput.addEventListener("input", function (evt) {
     evt.preventDefault();
     const eMailValidRgx = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
@@ -69,28 +68,27 @@ entreeInput.addEventListener('input', function(evt) {
 
 // --------------------------------- EASEPICK EXEMPLE ----------------------------------------------------
 
-const DateTime = easepick.DateTime;
-const today = new DateTime();
-const tomorrow = today.clone().add(1, 'day');
+// const DateTime = easepick.DateTime;
+// const today = new DateTime();
+// const tomorrow = today.clone().add(1, 'day');
 
-const dateEl = document.getElementById('dateTest');
-dateEl.innerHTML = `Today is: ${today.format('DD MMM YYYY')}<br/>Tomorrow is: ${tomorrow.format('DD MMM YYYY')}`;
+// const dateEl = document.getElementById('dateTest');
+// dateEl.innerHTML = `Today is: ${today.format('DD MMM YYYY')}<br/>Tomorrow is: ${tomorrow.format('DD MMM YYYY')}`;
 
 // ------------------------------------ BOUTON PASSER AU PAIMENT -----------------------------------------
 
 const resaButton = document.querySelector("#buttonVerif");
+const verifButton = document.querySelector("#verif");
 
-function onClick (event) {
+resaButton.classList.add("disabled");
+function onClick(event) {
     event.preventDefault();
-    if(validNom && validEmail && validNum){
-        alert('Réservation acceptée');
-    }
-    else{ 
-        alert('Réservation impossible');
+    if(validNom && validEmail && validNum) {
+    resaButton.classList.remove("disabled");
     }
 }
 
-resaButton.addEventListener('click', onClick);
+verifButton.addEventListener('click', onClick);
 
 // ------------------------------------------------------------------------------------------
 
@@ -112,7 +110,8 @@ resaButton.addEventListener('click', onClick);
 
 // resaButton.addEventListener('click', onClick);
 
-// disaButton.classList.add("disabled");
+
+// resaButton.classList.remove("disabled");
 
 // document.querySelector("#buttonVerif").onclick = (event) => {
 //     event.preventDefault();
