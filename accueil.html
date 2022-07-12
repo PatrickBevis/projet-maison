@@ -9,20 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="./img/logo-maison_2_-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/accueil.css">
     <title>Accueil</title>
 </head>
 
 <body>
 
-    <header class="d-flex align-items-center mb-5 border-bottom pb-2">
+    <nav class="container-fluid d-flex align-items-center mb-5pb-2">
         <div><img src="img/logo-maison_bg-remove-removebg-p.png"></div>
         <h1>LouezUneMaison</h1>
-    </header>
+    </nav>
 
-    <div class="container container-lg">
-        <div class="row">
+    <header class="header-style container-fluid d-flex flex-column justify-content-center align-items-center">
+        <div class="container">
+          <div class="row">
+            <div class="col d-flex flex-column justify-content-center align-items-center "><h2 class="text-light">Louez une maison de rêve ! </h2><small class="text-light">(si vous aimez les grandes maisons avec piscine...Fin bref !)</small></div>
+           
+    
+          </div>
+        </div>
+      </header>
+
+
+    <div class="container container-lg ">
+        <div class="row d-flex justify-content-center">
             <!-- CARDS -->
-            <div class=" col card m-3 w-25 p-0">
+            <div class=" col-lg-6 col-12 card m-5 w-25 p-0 shadow-lg">
                 <img src="img/Maison4.jpg" class="card-img-top " alt="maison-1">
                 <div class="card-body">
                     <h5 class="card-title text-muted">Lyon, France</h5>
@@ -37,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="col card m-3 w-25 p-0">
+            <div class="col-lg-6 col-12 card m-5 w-25 p-0 shadow-lg">
                 <img src="img/Maison5.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
                     <h5 class="card-title text-muted">St-Tropez, France</h5>
@@ -146,46 +159,47 @@
     </div>
 
 
-    <footer class="">
-        <div class="container-fluid container-lg border border-success bg-white">
-          <div class="row ">
-            <div class="col d-flex justify-content-center">
-              <i class="fa-brands fa-facebook   p-3 m-10"></i>
-              <i class="fa-brands fa-instagram  p-3 m-10"></i>
-              <i class="fa-brands fa-pinterest  p-3 m-10"></i>
+    <footer class="border-top border-success mb-5">
+        <div class="container-fluid container-lg  bg-white">
+            <div class="row ">
+                <div class="col d-flex justify-content-center">
+                    <i class="fa-brands fa-facebook  fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
+                    <i class="fa-brands fa-instagram fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
+                    <i class="fa-brands fa-pinterest fa-2x p-3 border bg-success rounded-circle text-white m-2"></i>
+                </div>
             </div>
-          </div>
-          <div class="row ">
-            <div class="col-lg-4 d-flex flex-column align-items-center ">
-              <h3 class="m-2 mt-5">A propos</h3>
-              <p class="">Contact</p>
-              <p class="">Réservation</p>
-              <p class="">Mentions légales</p>
-              <p class="">CGU</p>
-            </div>
-            <div class="col-lg-4 d-flex flex-column align-items-center ">
-              <h3 class="m-2 mt-5">Contact</h3>
-              <p class="">123 rue du pain, 59400 Cambrai</p>
-              <p class="">01 77 88 99 11</p>
-              <p class="">contact@Louezunemaison.fr</p>
-            </div>
+            <div class="row ">
+                <div class="col-lg-4 d-flex flex-column align-items-center ">
+                    <h3 class="m-2 mt-5">A propos</h3>
+                    <p class="">Contact</p>
+                    <p class="">Réservation</p>
+                    <p class="">Mentions légales</p>
+                    <p class="">CGU</p>
+                </div>
+                <div class="col-lg-4 d-flex flex-column align-items-center ">
+                    <h3 class="m-2 mt-5">Contact</h3>
+                    <p class="">123 rue du pain, 59400 Cambrai</p>
+                    <p class="">01 77 88 99 11</p>
+                    <p class="">contact@Louezunemaison.fr</p>
+                </div>
 
-            <div class="col-lg-4 d-flex flex-column align-items-center ">
-              <a href="https://github.com/JustineDev00/Restaurant-BS-TBDA"><img src="./img/logo-maison_bg-remove-removebg-p.png"
-                  alt="" class="d-none d-lg-block d-flex justify-content-center w-100"></a>
-    
+                <div class="col-lg-4 d-flex flex-column align-items-center ">
+                    <a href="https://github.com/PatrickBevis/projet-maison"><img
+                            src="./img/logo-maison_2_-removebg-preview.png" alt=""
+                            class="d-none d-lg-block d-flex justify-content-center w-75 ms-5"></a>
+
+                </div>
+
+
             </div>
-            
-    
-              </div>
-            </div>
-          </div>
-          <div class="row d-flex ">
-            <div class="col "></div>
-            <p class="d-flex justify-content-center p-3">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p>
-          </div>
         </div>
-      </footer>
+        </div>
+        <div class="row d-flex ">
+            <div class="col "></div>
+            <p class="d-flex justify-content-center">&copy; 2022 Louez Une Maison (AFPA) | Patrick-Thomas-Zoé</p>
+        </div>
+        </div>
+    </footer>
     <!-- <footer class="text-center bottom-0 m-auto container-fluid border-top pt-2">
         <h4>LouezUneMaison.com</h4>
         <div class="d-flex flex-row justify-content-center list-style-none m-3">

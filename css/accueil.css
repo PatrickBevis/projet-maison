@@ -1,0 +1,11 @@
+.header-style{
+    background: url(../img/maison-bg-header.jpg)center;
+    
+    background-size: cover;
+    height: 500px;
+}
+
+footer i:hover{
+    cursor: pointer;
+}
+
