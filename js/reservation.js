@@ -1,5 +1,3 @@
-const resaButton = document.querySelector("#buttonVerif");
-
 const nameInput = document.querySelector(".nameInput");
 const eMailInput = document.querySelector(".eMailInput");
 const telNum = document.querySelector(".telNum");
@@ -9,7 +7,6 @@ const telNum = document.querySelector(".telNum");
 let  validNom = false;
 nameInput.addEventListener("input", function (evt) {
     evt.preventDefault();
-    // const nameValidRgx = /^(.*?)\s([\wáâàãçéêíóôõúüÁÂÀÃÇÉÊÍÓÔÕÚÜ]+\-?\'?\w+\.*?)$/; 
     const nameValidRgx = /^([A-Za-z0-9]){4,20}$/;
     const inputValue = nameInput.value;
     console.log(nameValidRgx.test(inputValue));
@@ -29,7 +26,6 @@ let  validEmail = false;
 
 eMailInput.addEventListener("input", function (evt) {
     evt.preventDefault();
-
     const eMailValidRgx = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
     const emailValue = evt.target.value;
     console.log(eMailValidRgx.test(emailValue));
@@ -48,8 +44,7 @@ eMailInput.addEventListener("input", function (evt) {
 let  validNum = false;
 telNum.addEventListener("input", function (evt) {
     evt.preventDefault();
-    const telValidRgx = /^0[1-7][ ](0-9){2}[ ](0-9){2}[ ](0-9){2}[ ](0-9){2}$/;
-                        
+    const telValidRgx = /^0[1-7][ ](0-9){2}[ ](0-9){2}[ ](0-9){2}[ ](0-9){2}$/;          
     const telValue = evt.target.value;
     console.log(telValidRgx.test(telValue));
     validEmail = telValidRgx.test(telValue);
@@ -64,11 +59,21 @@ telNum.addEventListener("input", function (evt) {
 
 // --------------------------------------------------------------------------------------
 
+const resaButton = document.querySelector("#buttonVerif");
 
+function onClick (event) {
+    event.preventDefault();
+    if(validNom && validEmail && validNum){
+        alert('paiement accepté');
+    }
+    else{ 
+        alert('paiement refusé');
+    }
+}
 
+resaButton.addEventListener('click', onClick);
 
-
-
+// ------------------------------------------------------------------------------------------
 
 // function onClick (event){
 //     event.preventDefault();
@@ -87,10 +92,6 @@ telNum.addEventListener("input", function (evt) {
 // }
 
 // resaButton.addEventListener('click', onClick);
-
-
-
-
 
 // disaButton.classList.add("disabled");
 
