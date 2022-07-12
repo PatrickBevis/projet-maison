@@ -1,15 +1,16 @@
-let resaButton = document.querySelector("#buttonVerif");
+const resaButton = document.querySelector("#buttonVerif");
 
-let nameInput = document.querySelector(".nameInput");
-let eMailInput = document.querySelector(".eMailInput");
-let telNum = document.querySelector(".telNum");
+const nameInput = document.querySelector(".nameInput");
+const eMailInput = document.querySelector(".eMailInput");
+const telNum = document.querySelector(".telNum");
 
 // --------------------------------------------------------------------------------------------
 
 let  validNom = false;
 nameInput.addEventListener("input", function (evt) {
     evt.preventDefault();
-    const nameValidRgx = /(.*?)\s([\wáâàãçéêíóôõúüÁÂÀÃÇÉÊÍÓÔÕÚÜ]+\-?\'?\w+\.*?$)/; // const nameValidRgx = /^([A-Za-z0-9]){4,20}$/;
+    // const nameValidRgx = /^(.*?)\s([\wáâàãçéêíóôõúüÁÂÀÃÇÉÊÍÓÔÕÚÜ]+\-?\'?\w+\.*?)$/; 
+    const nameValidRgx = /^([A-Za-z0-9]){4,20}$/;
     const inputValue = nameInput.value;
     console.log(nameValidRgx.test(inputValue));
     validNom = nameValidRgx.test(inputValue);
@@ -25,10 +26,12 @@ nameInput.addEventListener("input", function (evt) {
 // -------------------------------------------------------------------------------
 
 let  validEmail = false;
+
 eMailInput.addEventListener("input", function (evt) {
     evt.preventDefault();
-    const eMailValidRgx = /^((\w[^\W]+)[\.\-]?){1,}\@(([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const emailValue = eMailInput.value;
+
+    const eMailValidRgx = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
+    const emailValue = evt.target.value;
     console.log(eMailValidRgx.test(emailValue));
     validEmail = eMailValidRgx.test(emailValue);
   
@@ -45,8 +48,9 @@ eMailInput.addEventListener("input", function (evt) {
 let  validNum = false;
 telNum.addEventListener("input", function (evt) {
     evt.preventDefault();
-    const telValidRgx = /^([+]?\d{1,2}[-\s]?|)\d{3}[-\s]?\d{3}[-\s]?\d{4}$/;
-    const telValue = telNum.value;
+    const telValidRgx = /^0[1-7][ ](0-9){2}[ ](0-9){2}[ ](0-9){2}[ ](0-9){2}$/;
+                        
+    const telValue = evt.target.value;
     console.log(telValidRgx.test(telValue));
     validEmail = telValidRgx.test(telValue);
   
