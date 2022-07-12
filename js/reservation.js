@@ -47,7 +47,7 @@ telNum.addEventListener("input", function (evt) {
     const telValidRgx = /^(?:(?:(?:\+|00)33[ ]?(?:\(0\)[ ]?)?)|0){1}[1-9]{1}([ .-]?)(?:\d{2}\1?){3}\d{2}$/;    
     const telValue = evt.target.value;
     console.log(telValidRgx.test(telValue));
-    validEmail = telValidRgx.test(telValue);
+    validNum = telValidRgx.test(telValue);
   
     if(validNum) {
         telNum.style.borderColor = "green";
@@ -64,10 +64,10 @@ const resaButton = document.querySelector("#buttonVerif");
 function onClick (event) {
     event.preventDefault();
     if(validNom && validEmail && validNum){
-        alert('paiement accepté');
+        alert('Réservation acceptée');
     }
     else{ 
-        alert('paiement refusé');
+        alert('Réservation impossible');
     }
 }
 
