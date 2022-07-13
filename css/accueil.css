@@ -1,11 +1,14 @@
 .header-style{
     background: url(../img/maison-bg-header.jpg)center;
-    
     background-size: cover;
     height: 500px;
 }
 
 footer i:hover{
     cursor: pointer;
+}
+
+#w1, #w2, #w3, #w4, #w8 {
+    background-color: #C3DDC1;
 }
 
