@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./img/logo-maison_2_-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/accueil.css">
     <title>Accueil</title>
@@ -35,7 +35,7 @@
         <div class=" d-flex justify-content-around ">
 
             <div class="card container me-5 p-0 shadow">
-                <img src="img/maison2.jpg" class="card-img-top " alt="maison-1">
+                <img src="img/mais1.png" class="card-img-top " alt="maison-1">
                 <div class="card-body">
                     <h5 class="card-title text-muted text-center">Lyon, France</h5>
                     <p class="card-text text-center">Villa de luxe pour les pauvres</p>
@@ -45,7 +45,7 @@
             </div>
         
             <div class="card container p-0 ms-5  shadow">
-                <img src="img/maison4.jpg" class="card-img-top " alt="maison-2">
+                <img src="img/mais2.jpg" class="card-img-top " alt="maison-2">
                 <div class="card-body">
                     <h5 class="card-title text-center">St-Tropez, France</h5>
                     <p class="card-text text-center">Villa de luxe pour les pauvres</p>
@@ -67,37 +67,37 @@
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <h5 class="modal-title text-primary" id="staticBackdropLabel">Reservation</h5>
+                    <h5 class="modal-title text-success" id="staticBackdropLabel">Reservation</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
 
                 <div class="modal-body text-center ">
 
-                    <div class="d-flex flex-column  align-items-center justify-content-center text-primary">
+                    <div class="d-flex flex-column  align-items-center justify-content-center text-success">
 
                         <div>
-                            <i class="fa-solid fa-user fa-2xl mb-1 me-1"></i>
+                            <i class="fa-solid fa-user fa-2xl mb-1 me-1 text-success"></i>
                             <input type="text" class="container-fluid w-75 m-2 text-center mt-0 nameInput" placeholder="Votre nom">
                         </div>
 
-                        <div class="d-flex align-items-center justify-content-center text-primary">
+                        <div class="d-flex align-items-center justify-content-center text-success">
                             <i class="fa-solid fa-square-envelope fa-2xl mb-1 me-2"></i>
                             <input type="e-mail" class="container-fluid w-75 m-2 text-center mt-0 eMailInput" placeholder="Votre E-mail">
                         </div>
 
-                        <div class="d-flex justify-content-center align-items-center text-primary">
+                        <div class="d-flex justify-content-center align-items-center text-success">
                             <i class="fa-solid fa-square-phone fa-2xl mb-1 me-2"></i>
                             <input type="text" class="container-fluid w-75 m-2 text-center mt-0 telNum" placeholder="Votre numéro de téléphone">
                         </div>
 
                         <div class="d-flex justify-content-center align-items-center">
-                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2 text-primary"></i>
+                            <i class="fa-solid fa-arrow-right-to-bracket fa-2xl mb-1 me-2 text-success"></i>
                             
                             <select name="checkbox" id="date-select" class="form-control text-muted mt-0 mb-2 ms-1 me-1">
                                 <option disabled id="w1">01/07/2022 - 03/07/2022</option>
-                                <option id="w2">03/07/2022 - 06/07/2022</option>
+                                <option disabled id="w2">03/07/2022 - 06/07/2022</option>
                                 <option disabled id="w3">06/07/2022 - 09/07/2022</option>
-                                <option id="w4">09/07/2022 - 12/07/2022</option>
+                                <option disabled id="w4">09/07/2022 - 12/07/2022</option>
                                 <option id="w5">12/07/2022 - 15/07/2022</option>
                                 <option id="w6">15/07/2022 - 18/07/2022</option>
                                 <option id="w7">18/07/2022 - 21/07/2022</option>
@@ -114,11 +114,11 @@
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
                         <!-- <button id="verif" type="button">Vérifier</button> -->
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" id="buttonVerif">Réserver</button>
+                        <button type="button" class="btn btn-success" id="buttonVerif">Réserver</button>
                         <div id="confirmPaiement" class="alert alert-success mt-3 w-100 d-none" role="alert">
                             <h4 class="alert-heading text-center">Réservation acceptée</h4>
                             <hr>
-                            <button type="button" class="btn btn-outline-primary w-100" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modelId">Passer au paiement</button>
+                            <button type="button" class="btn btn-outline-success w-100" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#modelId">Passer au paiement</button>
                           </div>
                     </div>
                 </div>
